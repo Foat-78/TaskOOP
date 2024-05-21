@@ -1,5 +1,4 @@
 package Seminar2;
-
 public class Main {
     public static void main(String[] args) {
         Human human1 = new Human("Тамерлана");
@@ -13,10 +12,10 @@ public class Main {
         market.acceptToMarket(human2);
         market.acceptToMarket(human3);
         market.update();
+        System.out.println();
         market.acceptToMarket(human4);
         market.acceptToMarket(human5);
         market.acceptToMarket(human6);
         market.update();
-
     }
 }

@@ -20,6 +20,5 @@ public class main {
         BottleOfWaterVendingMachine vendingMachine = new BottleOfWaterVendingMachine();
         vendingMachine.initProduct(productList);
         System.out.println(vendingMachine.getProduct("test1",1.6));
-
     }
 }
