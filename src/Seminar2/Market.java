@@ -11,28 +11,11 @@ public class Market implements QueueBehavioure, MarketBehavioure {
         System.out.println(actor.getName() + " заходит в магазин");
         takeInQueue(actor);
     }
-
-    @Override
-    public void releaseFromMarket(List<Actor> actors) {
-        for (Actor actor : actors) {
-            System.out.println(actor.getName() + " выходит из магазина");
-            actorList.remove(actor);
-        }
-    }
-
-    @Override
-    public void update() {
-        takeOrders();
-        giveOrders();
-        releaseFromQueue();
-    }
-
     @Override
     public void takeInQueue(Actor actor) {
         System.out.println(actor.getName() + " встаёт в очередь");
         actorList.add(actor);
     }
-
     @Override
     public void takeOrders() {
         for (Actor actor : actorList) {
@@ -63,4 +46,23 @@ public class Market implements QueueBehavioure, MarketBehavioure {
             }
         }releaseFromMarket(releaseFromQueue);
     }
+
+    @Override
+    public void releaseFromMarket(List<Actor> actors) {
+        for (Actor actor : actors) {
+            System.out.println(actor.getName() + " выходит из магазина");
+            actorList.remove(actor);
+        }
+    }
+
+    @Override
+    public void update() {
+        takeOrders();
+        giveOrders();
+        releaseFromQueue();
+    }
+
+
+
+
 }

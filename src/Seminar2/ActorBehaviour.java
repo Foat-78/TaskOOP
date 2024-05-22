@@ -1,6 +1,6 @@
 package Seminar2;
 
-public interface ActorBehaviour {
+interface ActorBehaviour {
     void setMakeOrder(boolean make);
     void setTakeOrder(boolean take);
     boolean isMakeOrder();

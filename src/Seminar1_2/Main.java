@@ -31,6 +31,6 @@ public class Main {
         products.add(product8);
         VendingMachine vendingMachine1 = new VendingMachineHotDrink(products);
 
-        System.out.println(vendingMachine1.getProduct("foat").getName());
+        System.out.println(vendingMachine1);
     }
 }

@@ -13,7 +13,7 @@ public class Human extends Actor {
 
     @Override
     public void setMakeOrder(boolean make) {
-        isMakeOrder = make;
+        super.isMakeOrder = make;
     }
 
     @Override
