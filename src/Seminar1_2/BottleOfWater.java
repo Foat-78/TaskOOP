@@ -1,7 +1,7 @@
 package Seminar1_2;
 
 public class BottleOfWater extends Product {
-    public double volume;
+    private double volume;
     public BottleOfWater(int cost, String name, double volume) {
         super(cost, name);
         this.volume = volume;

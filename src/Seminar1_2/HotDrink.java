@@ -2,8 +2,8 @@ package Seminar1_2;
 
 public class HotDrink extends Product{
 
-    public int temperature;
-    public double volume;
+    private int temperature;
+    private double volume;
     public HotDrink(int cost, String name, double volume, int temperature) {
         super(cost, name);
         this.temperature = temperature;
