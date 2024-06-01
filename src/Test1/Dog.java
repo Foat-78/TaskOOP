@@ -1,6 +1,12 @@
 package Test1;
 
 public class Dog extends Animal{
+    public static int counter;
+    public static int count;
+
+    public static int getCounter() {
+        return counter;
+    }
 
     private String color;
     private double age;
@@ -17,6 +23,7 @@ public class Dog extends Animal{
         super(name, voice, weight);
         this.color = color;
         this.age = age;
+        counter++;
     }
 
     public Dog(String name, double weight, String color, double age) {
@@ -40,6 +47,7 @@ public class Dog extends Animal{
 
     @Override
     public String toString() {
-        return String.format("Кличка: %s -  Цвет: %s - Возраст: %s - Голос: %s - Вес: %.1f", name, color, age, voice, weight);
+        count++;
+        return String.format("%d. Кличка: %s -  Цвет: %s - Возраст: %s - Голос: %s - Вес: %.1f" + "\n", count, name, color, age, voice, weight).replace('-', ' ');
     }
 }
