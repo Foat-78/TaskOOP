@@ -2,6 +2,11 @@ package SeminarD3_2;
 
 
 public class Flow implements Comparable<Flow>{
+    /**
+     * Сравнение по surName
+     * @param o the object to be compared.
+     * @return
+     */
 //    @Override
 //    public int compareTo(Student o) {
 //        int surNameRes = surName.compareTo(o.surName);
@@ -11,6 +16,11 @@ public class Flow implements Comparable<Flow>{
 //        return surNameRes;
 //    }
 
+    /**
+     * Сравнение по nameFlow
+     * @param o the object to be compared.
+     * @return
+     */
     @Override
     public int compareTo(Flow o) {
         return nameFlow.compareTo(o.nameFlow);

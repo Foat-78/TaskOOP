@@ -10,18 +10,16 @@ public class Program {
         }
         System.out.println("\n***************ОТСОРТИРОВАННЫЙ СПИСОК по НАЗВАНИЮ ПОТОКА*******************\n");
 
-        Arrays.sort(flows); // Сортировка по названию потока
+        Arrays.sort(flows);
 
         for (Flow flow: flows) {
             System.out.println(flow);
         }
 
         System.out.println("\n***************ОТСОРТИРОВАННЫЙ СПИСОК по ID*******************\n");
-        Arrays.sort(flows, new StreamComparator()); // Сортировка по ID
+        Arrays.sort(flows, new StreamComparator());
         for (Flow flow: flows) {
             System.out.println(flow);
         }
-
     }
-
 }
