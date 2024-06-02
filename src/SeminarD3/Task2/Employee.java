@@ -3,13 +3,18 @@ package SeminarD3.Task2;
  * Рабочий (базовый тип)
  */
 public abstract class Employee implements Comparable<Employee>{
+//    @Override
+//    public int compareTo(Employee o) {
+//        int surNameRes = surName.compareTo(o.surName);
+//        if (surNameRes == 0){
+//            return name.compareTo(o.name);
+//        }
+//        return surNameRes;
+//    }
     @Override
     public int compareTo(Employee o) {
-        int surNameRes = surName.compareTo(o.surName);
-        if (surNameRes == 0){
-            return name.compareTo(o.name);
-        }
-        return surNameRes;
+        return surName.compareTo(o.surName);
+
     }
 
     public Employee(String name, String surName, double salary) {
