@@ -31,6 +31,9 @@ public abstract class Animal {
         }
     }
 
+    /**
+     * Имя
+     */
     String name;
     int maxRun;
     int maxSwim;

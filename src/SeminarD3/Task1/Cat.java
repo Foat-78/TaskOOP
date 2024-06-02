@@ -1,5 +1,8 @@
 package SeminarD3.Task1;
 
+/**
+ * Кошечка
+ */
 public class Cat extends Animal{
 
     private static int counter;
