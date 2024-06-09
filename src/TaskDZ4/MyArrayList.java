@@ -20,7 +20,6 @@ public class MyArrayList {
     public void add(Object item) {
         array[++lastIndex] = item;
     }
-
     @Override
     public String toString() {
          return Arrays.toString(array) ;

@@ -18,8 +18,6 @@ public class Program {
             }
         }
         System.out.println(arrayList);
-
-
         MyArrayList arrayList1 = new MyArrayList(new Object[5]);
         arrayList1.add(1);
         arrayList1.add("Toma");
