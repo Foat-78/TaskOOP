@@ -1,11 +1,8 @@
 package SeminarD4;
-
-
 import java.util.Comparator;
-
-public class StudentComparator implements Comparator<Student> {
+public class TeacherComparator <T extends User> implements Comparator<T> {
     @Override
-    public int compare(Student o1, Student o2) {
+    public int compare(T o1, T o2) {
         int resultOfComporing = o1.getSecondName().compareTo(o2.getSecondName());
         if(resultOfComporing == 0){
             resultOfComporing = o1.getFirstName().compareTo(o2.getSecondName());
